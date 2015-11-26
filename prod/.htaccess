@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule . adesiviprespaziati.it/prod/index.php [L] 
+php_value auto_prepend_file /var/www/public/adesiviprespaziati.it/prod/API/functions.php
